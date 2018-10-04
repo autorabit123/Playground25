@@ -820,6 +820,7 @@
         <members>Scorecard</members>
         <members>ScorecardAssociation</members>
         <members>ScorecardMetric</members>
+        <members>Silver_Peak_Object__c</members>
         <members>Site</members>
         <members>SocialPersona</members>
         <members>Solution</members>
@@ -851,6 +852,7 @@
         <members>Property_Explorer1</members>
         <members>Property__c</members>
         <members>Sample_Data_Import</members>
+        <members>Silver_Peak_Object__c</members>
         <name>CustomTab</name>
     </types>
     <types>
@@ -962,6 +964,7 @@
         <members>Scorecard-Scorecard Layout</members>
         <members>ScorecardAssociation-Scorecard Association Layout</members>
         <members>ScorecardMetric-Scorecard Metric Layout</members>
+        <members>Silver_Peak_Object__c-Silver Peak Object Layout</members>
         <members>Solution-Solution Layout</members>
         <members>Task-Task Layout</members>
         <members>User-User Layout</members>
@@ -1025,6 +1028,7 @@
         <members>Property__c.All</members>
         <members>Scorecard.AllScorecards</members>
         <members>Scorecard.MyScorecards</members>
+        <members>Silver_Peak_Object__c.All</members>
         <members>SocialPersona.AllSocialPersonas</members>
         <members>Solution.AllReviewedSolutions</members>
         <members>Solution.AllUnreviewedSolutions</members>
