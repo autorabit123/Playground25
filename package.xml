@@ -686,6 +686,7 @@
         <members>Property__c.Picture_IMG__c</members>
         <members>Property__c.Picture__c</members>
         <members>Property__c.Price__c</members>
+        <members>Property__c.Property_Fld__c</members>
         <members>Property__c.Record_Link__c</members>
         <members>Property__c.State__c</members>
         <members>Property__c.Status__c</members>
