@@ -13,7 +13,7 @@ public with sharing class HandlerMyOpenCases implements BotHandler {
             for (Case c : cases) {
                 List<BotField> fields = new List<BotField>();
                 fields.add(new BotField('Case Number', c.CaseNumber, '#/sObject/' + c.Id + '/view'));
-                fields.add(new BotField('Subject', c.Subject));
+                fields.add(new BotField('Subject Of Case', c.Subject));
                 //fields.add(new BotField('Priority', c.Priority));
                 fields.add(new BotField('Status', c.Status));
                 fields.add(new BotField('SLA Violation', c.SLAViolation__c));
