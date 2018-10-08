@@ -4,7 +4,7 @@ public with sharing class HandlerMyOpenCases implements BotHandler {
         
         List<Case> cases = 
             [SELECT Id, CaseNumber, Subject, Status, Priority, Contact.Id, Contact.Name 
-             FROM Case WHERE OwnerId =:UserInfo.getUserId() AND Status != 'Closed'];
+             FROM Case WHERE OwnerId =:UserInfo.getUserId() AND IsClosed = False];
         
         List<BotRecord> records = new List<BotRecord>();
         
