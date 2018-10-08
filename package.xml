@@ -171,6 +171,7 @@
         <members>Account.NaicsCode</members>
         <members>Account.NaicsDesc</members>
         <members>Account.Name</members>
+        <members>Account.New_Field_One__c</members>
         <members>Account.NumberOfEmployees</members>
         <members>Account.NumberofLocations__c</members>
         <members>Account.OwnerId</members>
