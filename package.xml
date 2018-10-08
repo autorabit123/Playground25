@@ -901,6 +901,7 @@
     <types>
         <members>Advertise_New_Property-2</members>
         <members>Opportunity_Status_Change-1</members>
+        <members>Opportunity_Status_Change-2</members>
         <members>Post_Price_Changes_to_Slack-1</members>
         <members>Price_Change_Push_Notification-1</members>
         <name>Flow</name>
