@@ -8,18 +8,14 @@ public with sharing class HandlerMyOpenCases implements BotHandler {
         
         List<BotRecord> records = new List<BotRecord>();
         
-        //Modifying - VA
-        if(!cases.isEmpty()) {
-            for (Case c : cases) {
-                List<BotField> fields = new List<BotField>();
-                fields.add(new BotField('Case Number', c.CaseNumber, '#/sObject/' + c.Id + '/view'));
-                fields.add(new BotField('Subject Of Case', c.Subject));
-                //fields.add(new BotField('Priority', c.Priority));
-                fields.add(new BotField('Status', c.Status));
-                fields.add(new BotField('SLA Violation', c.SLAViolation__c));
-                fields.add(new BotField('Contact', c.Contact.Name, '#/sObject/' + c.Contact.Id + '/view'));
-                records.add(new BotRecord(fields));
-            }
+        for (Case c : cases) {
+            List<BotField> fields = new List<BotField>();
+            fields.add(new BotField('Case Number', c.CaseNumber, '#/sObject/' + c.Id + '/view'));
+            fields.add(new BotField('Subject Of Case', c.Subject));
+            fields.add(new BotField('Priority', c.Priority));
+            fields.add(new BotField('Status', c.Status));
+            fields.add(new BotField('Contact', c.Contact.Name, '#/sObject/' + c.Contact.Id + '/view'));
+            records.add(new BotRecord(fields));
         }
         BotMessage message = new BotMessage('Bot', 'Here are your open cases:', records);
         return new BotResponse(message);        
