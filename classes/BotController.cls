@@ -32,7 +32,7 @@ public with sharing class BotController {
             if (session != null) {
                 String nextCommand = session.get('nextCommand');
                 // Test comment - VA
-                if (nextCommand != null) {
+                if (!String.isBlank(nextCommand)) {
                     Type t = Type.forName('', nextCommand);
                     BotHandler h = (BotHandler)t.newInstance();
                     return h.handle(utterance, null, session, fileName, fileContent);
