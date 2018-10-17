@@ -754,6 +754,7 @@
         <members>Task.Type</members>
         <members>Task.WhatId</members>
         <members>Task.WhoId</members>
+        <members>Test_SP_Object__c.Test_SP_Field_2__c</members>
         <members>Test_SP_Object__c.Test_SP_Field__c</members>
         <members>User.ManagerId</members>
         <members>UserProvisioningRequest.AppName</members>
