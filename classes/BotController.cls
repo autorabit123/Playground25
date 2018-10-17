@@ -37,6 +37,8 @@ public with sharing class BotController {
                     BotHandler h = (BotHandler)t.newInstance();
                     return h.handle(utterance, null, session, fileName, fileContent);
                 }
+            } else {            
+                System.debug('Vikram');            
             }
         
             for (HandlerMapping mapping : BotController.handlerMappings) {
