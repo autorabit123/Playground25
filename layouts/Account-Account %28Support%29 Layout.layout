@@ -43,6 +43,10 @@
                 <behavior>Edit</behavior>
                 <field>New_Field_One__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>New_Field_Two__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
