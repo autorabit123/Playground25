@@ -1,4 +1,10 @@
 trigger TestAccountTrigger on Account (before insert) {
-    system.debug('Test Trigger Comment');
+    for (Account acc: Trigger.new)
+    {
+       if(acc.type == 'Prospect')
+       {
+          acc.Industry = 'Banking';
+       }
+    }
 
 }
