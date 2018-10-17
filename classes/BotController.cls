@@ -55,7 +55,7 @@ public with sharing class BotController {
             return new BotResponse(new BotMessage('Bot', 'I don\'t know how to answer that'));
             
         } catch (Exception e) {
-            System.debug(e.getMessage());                
+            //System.debug(e.getMessage());                
             return new BotResponse(new BotMessage('Bot', 'Oops, something went wrong invoking that command'));
         }
         
