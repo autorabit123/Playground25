@@ -3,7 +3,7 @@ trigger TestAccountTrigger on Account (before insert) {
     {
        if(acc.type == 'Prospect')
        {
-          acc.Industry = 'Banking';
+          acc.Industry = 'Apparel';
        }
     }
 
