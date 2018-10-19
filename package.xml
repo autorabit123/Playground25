@@ -160,6 +160,7 @@
         <members>Account.AccountSource</members>
         <members>Account.Active__c</members>
         <members>Account.AnnualRevenue</members>
+        <members>Account.AutorabitExtId__c</members>
         <members>Account.BillingAddress</members>
         <members>Account.CleanStatus</members>
         <members>Account.CustomerPriority__c</members>
@@ -172,6 +173,8 @@
         <members>Account.NaicsCode</members>
         <members>Account.NaicsDesc</members>
         <members>Account.Name</members>
+        <members>Account.New_Field_One__c</members>
+        <members>Account.New_Field_Two__c</members>
         <members>Account.NumberOfEmployees</members>
         <members>Account.NumberofLocations__c</members>
         <members>Account.OwnerId</members>
@@ -186,6 +189,8 @@
         <members>Account.Sic</members>
         <members>Account.SicDesc</members>
         <members>Account.Site</members>
+        <members>Account.Test_Checkbox__c</members>
+        <members>Account.Test_Number__c</members>
         <members>Account.TickerSymbol</members>
         <members>Account.Tradestyle</members>
         <members>Account.Type</members>
@@ -327,6 +332,7 @@
         <members>Contact.AccountId</members>
         <members>Contact.AssistantName</members>
         <members>Contact.AssistantPhone</members>
+        <members>Contact.AutorabitExtId__c</members>
         <members>Contact.Birthdate</members>
         <members>Contact.CleanStatus</members>
         <members>Contact.Department</members>
@@ -352,6 +358,8 @@
         <members>Contact.OwnerId</members>
         <members>Contact.Phone</members>
         <members>Contact.ReportsToId</members>
+        <members>Contact.Test_Contact_Checkbox__c</members>
+        <members>Contact.Test_Contact_Text__c</members>
         <members>Contact.Test_Text_Field_One__c</members>
         <members>Contact.Title</members>
         <members>ContentVersion.ContentSize</members>
@@ -578,6 +586,7 @@
         <members>Macro.StartingContext</members>
         <members>Opportunity.AccountId</members>
         <members>Opportunity.Amount</members>
+        <members>Opportunity.AutorabitExtId__c</members>
         <members>Opportunity.CampaignId</members>
         <members>Opportunity.CloseDate</members>
         <members>Opportunity.ContractId</members>
@@ -724,7 +733,7 @@
         <members>ScorecardMetric.Name</members>
         <members>ScorecardMetric.ReportId</members>
         <members>ScorecardMetric.ScorecardId</members>
-        <members>Silver_Peak_Object__c.AutorabitExtId__c</members>
+        <members>Silver_Peak_CObj__c.Silver_Peak_Object__c</members>
         <members>Silver_Peak_Object__c.sil__c</members>
         <members>SocialPersona.ExternalId</members>
         <members>SocialPersona.ExternalPictureURL</members>
@@ -834,6 +843,7 @@
         <members>Scorecard</members>
         <members>ScorecardAssociation</members>
         <members>ScorecardMetric</members>
+        <members>Silver_Peak_CObj__c</members>
         <members>Silver_Peak_Object__c</members>
         <members>Site</members>
         <members>SocialPersona</members>
@@ -854,7 +864,9 @@
         <members>Dreamhouse_Settings__c-en_US</members>
         <members>Favorite__c-en_US</members>
         <members>Property__c-en_US</members>
+        <members>Silver_Peak_CObj__c-en_US</members>
         <members>Silver_Peak_Object__c-en_US</members>
+        <members>Test_SP_Object__c-en_US</members>
         <name>CustomObjectTranslation</name>
     </types>
     <types>
@@ -916,8 +928,6 @@
     <types>
         <members>Advertise_New_Property-2</members>
         <members>Opportunity_Status_Change-1</members>
-        <members>Opportunity_Status_Change-2</members>
-        <members>Opportunity_Status_Change-3</members>
         <members>Post_Price_Changes_to_Slack-1</members>
         <members>Price_Change_Push_Notification-1</members>
         <name>Flow</name>
@@ -961,6 +971,7 @@
         <members>EmailMessage-Email Message Layout</members>
         <members>Event-Event Layout</members>
         <members>Favorite__c-Favorite Layout</members>
+        <members>FeedItem-Feed Item Layout</members>
         <members>Global-Global Layout</members>
         <members>Idea-Idea Layout</members>
         <members>Lead-Lead %28Marketing%29 Layout</members>
@@ -983,12 +994,12 @@
         <members>Scorecard-Scorecard Layout</members>
         <members>ScorecardAssociation-Scorecard Association Layout</members>
         <members>ScorecardMetric-Scorecard Metric Layout</members>
+        <members>Silver_Peak_CObj__c-Silver Peak CObj Layout</members>
         <members>Silver_Peak_Object__c-Silver Peak Object Layout</members>
         <members>Solution-Solution Layout</members>
         <members>Task-Task Layout</members>
         <members>Test_SP_Object__c-Test SP Object Layout</members>
         <members>User-User Layout</members>
-        <members>UserAlt-User Profile Layout</members>
         <members>UserProvAccount-User Provisioning Account Layout</members>
         <members>UserProvisioningLog-User Provisioning Log Layout</members>
         <members>UserProvisioningRequest-User Provisioning Request Layout</members>
@@ -1097,6 +1108,10 @@
         <members>StandardAul</members>
         <members>Work%2Ecom Only User</members>
         <name>Profile</name>
+    </types>
+    <types>
+        <members>Custom_Sales_Profile_profilePasswordPolicy1539201436033</members>
+        <name>ProfilePasswordPolicy</name>
     </types>
     <types>
         <members>Custom_Sales_Profile_profileSessionSetting1539201436089</members>
@@ -1215,6 +1230,7 @@
         <members>Order</members>
         <members>Property__c</members>
         <members>Silver_Peak_Object__c</members>
+        <members>Test_SP_Object__c</members>
         <members>User</members>
         <name>SharingRules</name>
     </types>
@@ -1288,9 +1304,11 @@
         <members>Opportunity</members>
         <members>Order</members>
         <members>Property__c</members>
+        <members>Silver_Peak_CObj__c</members>
         <members>Silver_Peak_Object__c</members>
         <members>Solution</members>
         <members>Task</members>
+        <members>Test_SP_Object__c</members>
         <name>TopicsForObjects</name>
     </types>
     <types>

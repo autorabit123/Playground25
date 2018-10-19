@@ -6,5 +6,6 @@
     <label>LightningBolt</label>
     <navType>Standard</navType>
     <tabs>standard-LightningBoltHome</tabs>
+    <tabs>Silver_Peak_Object__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

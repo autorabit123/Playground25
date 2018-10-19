@@ -11,4 +11,5 @@
     <tabs>standard-IdeaTheme</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
+    <tabs>Silver_Peak_Object__c</tabs>
 </CustomApplication>
