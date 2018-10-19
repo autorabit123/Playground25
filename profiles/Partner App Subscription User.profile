@@ -347,11 +347,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Account.New_Field_One__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Account.NumberOfEmployees</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1641,6 +1636,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Property__c.Property_Fld__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Property__c.Record_Link__c</field>
         <readable>true</readable>
@@ -1679,6 +1679,16 @@
         <editable>true</editable>
         <field>Property__c.Zip__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Silver_Peak_Object__c.AutorabitExtId__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Silver_Peak_Object__c.sil__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -1753,6 +1763,9 @@
         <layout>CaseClose-Close Case Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>CommunityMemberLayout-Community Member Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Contact-Contact Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -1825,6 +1838,9 @@
         <layout>ScorecardMetric-Scorecard Metric Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Silver_Peak_Object__c-Silver Peak Object Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Solution-Solution Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -1832,6 +1848,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>User-User Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserAlt-User Profile Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>UserProvAccount-User Provisioning Account Layout</layout>
@@ -1943,6 +1962,10 @@
     <tabVisibilities>
         <tab>Sample_Data_Import</tab>
         <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Silver_Peak_Object__c</tab>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Account</tab>
