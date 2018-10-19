@@ -53,30 +53,25 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
-        <fullName>Test_SP_Field_2__c</fullName>
+        <fullName>Silver_Peak_Object__c</fullName>
         <externalId>false</externalId>
-        <label>Test SP Field_2</label>
-        <length>100</length>
-        <required>false</required>
+        <label>Silver Peak Object</label>
+        <referenceTo>Silver_Peak_Object__c</referenceTo>
+        <relationshipLabel>silc</relationshipLabel>
+        <relationshipName>silc</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
         <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>
-    <fields>
-        <fullName>Test_SP_Field__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Test SP Field</label>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <label>Test SP Object</label>
+    <label>Silver Peak CObj</label>
     <nameField>
-        <label>Test SP Object Name</label>
+        <label>Silver Peak CObj Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Test SP Objects</pluralLabel>
+    <pluralLabel>silc</pluralLabel>
     <searchLayouts/>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
