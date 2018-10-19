@@ -1,5 +1,5 @@
 public with sharing class BotController {
-
+//test
     class HandlerMapping {
         
         public String handlerClassName;
@@ -16,10 +16,10 @@ public with sharing class BotController {
     
     static {
         List<Bot_Command__c> commands = [SELECT apex_class__c, pattern__c FROM Bot_Command__c WHERE Active__c = True ORDER BY Name];
-        System.debug(commands);
+        //System.debug(commands);
         List<HandlerMapping> mappings = new List<HandlerMapping>();
         for (Bot_Command__c command : commands) {
-			mappings.add(new HandlerMapping(command.apex_class__c, command.pattern__c));
+            mappings.add(new HandlerMapping(command.apex_class__c, command.pattern__c));
         }
         handlerMappings = mappings;
     }
@@ -31,11 +31,14 @@ public with sharing class BotController {
             
             if (session != null) {
                 String nextCommand = session.get('nextCommand');
-                if (nextCommand != null) {
+                // Test comment - VA
+                if (!String.isBlank(nextCommand) && nextCommand != null) {
                     Type t = Type.forName('', nextCommand);
                     BotHandler h = (BotHandler)t.newInstance();
                     return h.handle(utterance, null, session, fileName, fileContent);
                 }
+            } else {            
+                System.debug('Vikram');            
             }
         
             for (HandlerMapping mapping : BotController.handlerMappings) {
@@ -54,7 +57,7 @@ public with sharing class BotController {
             return new BotResponse(new BotMessage('Bot', 'I don\'t know how to answer that'));
             
         } catch (Exception e) {
-            System.debug(e);                
+            //System.debug(e.getMessage());                
             return new BotResponse(new BotMessage('Bot', 'Oops, something went wrong invoking that command'));
         }
         

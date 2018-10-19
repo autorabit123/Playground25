@@ -12,9 +12,13 @@
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
     <tabs>standard-home</tabs>
+    <tabs>Silver_Peak_Object__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningService_UtilityBar</utilityBar>
     <workspaceConfig>
+        <mappings>
+            <tab>Silver_Peak_Object__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>

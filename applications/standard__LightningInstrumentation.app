@@ -6,5 +6,6 @@
     <label>LightningInstrumentation</label>
     <navType>Standard</navType>
     <tabs>standard-LightningInstrumentation</tabs>
+    <tabs>Silver_Peak_Object__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>
