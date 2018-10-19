@@ -171,7 +171,6 @@
         <members>Account.NaicsCode</members>
         <members>Account.NaicsDesc</members>
         <members>Account.Name</members>
-        <members>Account.New_Field_One__c</members>
         <members>Account.NumberOfEmployees</members>
         <members>Account.NumberofLocations__c</members>
         <members>Account.OwnerId</members>
@@ -494,6 +493,7 @@
         <members>DuplicateRecordSet.RecordCount</members>
         <members>EmailMessage.BccAddress</members>
         <members>EmailMessage.CcAddress</members>
+        <members>EmailMessage.FirstOpenedDate</members>
         <members>EmailMessage.FromAddress</members>
         <members>EmailMessage.FromName</members>
         <members>EmailMessage.HasAttachment</members>
@@ -502,6 +502,7 @@
         <members>EmailMessage.Incoming</members>
         <members>EmailMessage.IsExternallyVisible</members>
         <members>EmailMessage.IsPrivateDraft</members>
+        <members>EmailMessage.LastOpenedDate</members>
         <members>EmailMessage.MessageDate</members>
         <members>EmailMessage.MessageSize</members>
         <members>EmailMessage.ParentId</members>
@@ -520,6 +521,7 @@
         <members>Event.EventSubtype</members>
         <members>Event.IsAllDayEvent</members>
         <members>Event.IsPrivate</members>
+        <members>Event.IsRecurrence2</members>
         <members>Event.IsReminderSet</members>
         <members>Event.Location</members>
         <members>Event.OwnerId</members>
@@ -687,6 +689,7 @@
         <members>Property__c.Picture_IMG__c</members>
         <members>Property__c.Picture__c</members>
         <members>Property__c.Price__c</members>
+        <members>Property__c.Property_Fld__c</members>
         <members>Property__c.Record_Link__c</members>
         <members>Property__c.State__c</members>
         <members>Property__c.Status__c</members>
@@ -700,8 +703,11 @@
         <members>QuickText.Message</members>
         <members>QuickText.Name</members>
         <members>QuickText.OwnerId</members>
+        <members>RecordAction.ActionDefinition</members>
+        <members>RecordAction.ActionType</members>
         <members>RecordAction.FlowDefinition</members>
         <members>RecordAction.FlowInterviewId</members>
+        <members>RecordAction.IsMandatory</members>
         <members>RecordAction.Order</members>
         <members>RecordAction.Pinned</members>
         <members>RecordAction.RecordId</members>
@@ -716,6 +722,8 @@
         <members>ScorecardMetric.Name</members>
         <members>ScorecardMetric.ReportId</members>
         <members>ScorecardMetric.ScorecardId</members>
+        <members>Silver_Peak_Object__c.AutorabitExtId__c</members>
+        <members>Silver_Peak_Object__c.sil__c</members>
         <members>SocialPersona.ExternalId</members>
         <members>SocialPersona.ExternalPictureURL</members>
         <members>SocialPersona.Name</members>
@@ -780,6 +788,7 @@
         <members>CampaignMember</members>
         <members>Case</members>
         <members>CaseContactRole</members>
+        <members>ChatterActivity</members>
         <members>CollaborationGroup</members>
         <members>CollaborationGroupMember</members>
         <members>Contact</members>
@@ -840,6 +849,7 @@
         <members>Dreamhouse_Settings__c-en_US</members>
         <members>Favorite__c-en_US</members>
         <members>Property__c-en_US</members>
+        <members>Silver_Peak_Object__c-en_US</members>
         <name>CustomObjectTranslation</name>
     </types>
     <types>
@@ -901,6 +911,8 @@
     <types>
         <members>Advertise_New_Property-2</members>
         <members>Opportunity_Status_Change-1</members>
+        <members>Opportunity_Status_Change-2</members>
+        <members>Opportunity_Status_Change-3</members>
         <members>Post_Price_Changes_to_Slack-1</members>
         <members>Price_Change_Push_Notification-1</members>
         <name>Flow</name>
@@ -932,6 +944,7 @@
         <members>Case-Case %28Support%29 Layout</members>
         <members>Case-Case Layout</members>
         <members>CaseClose-Close Case Layout</members>
+        <members>CommunityMemberLayout-Community Member Layout</members>
         <members>Contact-Contact %28Marketing%29 Layout</members>
         <members>Contact-Contact %28Sales%29 Layout</members>
         <members>Contact-Contact %28Support%29 Layout</members>
@@ -969,6 +982,7 @@
         <members>Solution-Solution Layout</members>
         <members>Task-Task Layout</members>
         <members>User-User Layout</members>
+        <members>UserAlt-User Profile Layout</members>
         <members>UserProvAccount-User Provisioning Account Layout</members>
         <members>UserProvisioningLog-User Provisioning Log Layout</members>
         <members>UserProvisioningRequest-User Provisioning Request Layout</members>
@@ -1163,7 +1177,6 @@
         <members>Macro</members>
         <members>Mobile</members>
         <members>Name</members>
-        <members>OmniChannel</members>
         <members>Opportunity</members>
         <members>Order</members>
         <members>OrgPreference</members>
@@ -1190,6 +1203,7 @@
         <members>Opportunity</members>
         <members>Order</members>
         <members>Property__c</members>
+        <members>Silver_Peak_Object__c</members>
         <members>User</members>
         <name>SharingRules</name>
     </types>
@@ -1263,6 +1277,7 @@
         <members>Opportunity</members>
         <members>Order</members>
         <members>Property__c</members>
+        <members>Silver_Peak_Object__c</members>
         <members>Solution</members>
         <members>Task</members>
         <name>TopicsForObjects</name>
