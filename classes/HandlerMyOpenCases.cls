@@ -4,24 +4,26 @@ public with sharing class HandlerMyOpenCases implements BotHandler {
         
         List<Case> cases = 
             [SELECT Id, CaseNumber, Subject, Status, Priority, Contact.Id, Contact.Name 
-             FROM Case WHERE OwnerId =:UserInfo.getUserId() AND IsClosed = False];
+             FROM Case WHERE OwnerId =:UserInfo.getUserId() AND Status != 'Closed'];
         
         List<BotRecord> records = new List<BotRecord>();
         
-        if(cases != null && !cases.isEmpty()) {
+        //Modifying - VA
+        if(cases != null && cases.size()>0) {
             for (Case c : cases) {
                 List<BotField> fields = new List<BotField>();
                 fields.add(new BotField('Case Number', c.CaseNumber, '#/sObject/' + c.Id + '/view'));
-                //Test Vikram - 10/25
-                fields.add(new BotField('PotentialLiability', c.PotentialLiability__c));
                 fields.add(new BotField('Subject Of Case', c.Subject));
+                //fields.add(new BotField('Priority', c.Priority));
                 fields.add(new BotField('Status', c.Status));
-                //fields.add(new BotField('Contact', c.Contact.Name, '#/sObject/' + c.Contact.Id + '/view'));
-                fields.add(new BotField('EngineeringReqNumber', c.EngineeringReqNumber__c));
+                fields.add(new BotField('SLA Violation', c.SLAViolation__c));
+                fields.add(new BotField('Contact', c.Contact.Name, '#/sObject/' + c.Contact.Id + '/view'));
                 records.add(new BotRecord(fields));
             }
         }
         BotMessage message = new BotMessage('Bot', 'Here are your open cases:', records);
-        return new BotResponse(message);        
-    }    
+        return new BotResponse(message);
+        
+    }
+    
 }
