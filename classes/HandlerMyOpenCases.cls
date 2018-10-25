@@ -14,7 +14,7 @@ public with sharing class HandlerMyOpenCases implements BotHandler {
                 fields.add(new BotField('Case Number', c.CaseNumber, '#/sObject/' + c.Id + '/view'));
                 //Test Vikram - 10/25
                 fields.add(new BotField('PotentialLiability', c.PotentialLiability__c));
-                fields.add(new BotField('Subject', c.Subject));
+                fields.add(new BotField('Subject of the Case', c.Subject));
                 fields.add(new BotField('Status', c.Status));
                 fields.add(new BotField('SLA Violation', c.SLAViolation__c));
                 fields.add(new BotField('Contact', c.Contact.Name, '#/sObject/' + c.Contact.Id + '/view'));
