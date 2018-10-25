@@ -1,9 +1,9 @@
 trigger TestAccountTrigger on Account (before insert) {
     for (Account acc: Trigger.new)
     {
-       if(acc.type == 'Prospect')
+       if(acc.type == 'Customer')
        {
-          acc.Industry = 'Finance';
+          acc.Industry = 'Fashion';
        }
     }
 
