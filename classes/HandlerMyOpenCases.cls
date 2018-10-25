@@ -8,7 +8,7 @@ public with sharing class HandlerMyOpenCases implements BotHandler {
         
         List<BotRecord> records = new List<BotRecord>();
         
-        if(cases != null && !cases.isEmpty()) {
+        if(cases != null) {
             for (Case c : cases) {
                 List<BotField> fields = new List<BotField>();
                 fields.add(new BotField('Case Number', c.CaseNumber, '#/sObject/' + c.Id + '/view'));
