@@ -359,6 +359,7 @@
         <members>Contact.OwnerId</members>
         <members>Contact.Phone</members>
         <members>Contact.ReportsToId</members>
+        <members>Contact.Test_Contact_Check_One__c</members>
         <members>Contact.Test_Contact_Checkbox__c</members>
         <members>Contact.Test_Contact_Text__c</members>
         <members>Contact.Test_Text_Field_One__c</members>

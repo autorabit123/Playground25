@@ -1027,6 +1027,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Contact.Test_Contact_Check_One__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Contact.Test_Contact_Checkbox__c</field>
         <readable>true</readable>
     </fieldPermissions>
