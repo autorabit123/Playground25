@@ -357,6 +357,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.New_Field_Three__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.New_Field_Two__c</field>
         <readable>true</readable>
     </fieldPermissions>

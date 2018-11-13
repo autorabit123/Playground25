@@ -357,6 +357,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.New_Field_Three__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.New_Field_Two__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2059,6 +2064,10 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <userLicense>Force.com - Free</userLicense>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ActivitiesAccess</name>
+    </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
         <name>AddDirectMessageMembers</name>
